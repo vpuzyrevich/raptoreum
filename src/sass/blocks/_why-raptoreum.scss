@@ -1,0 +1,52 @@
+.why-raptoreum {
+    padding-top: 107px;
+    height: 489px;
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        @include before-square;
+        &:before {
+            width: 225px;
+            height: 225px;
+            right: -379px;
+            top: 90px;
+        }
+        @include after_square;
+        &:after {
+            width: 225px;
+            height: 225px;
+            top: 199px;
+            right: -278px;
+        }
+
+    }
+    &__titles {
+        width: 379px;
+        .title {
+            text-align: left;
+        }
+    }
+    &__descr {
+        margin-top: 25px;
+        font-size: 24px;
+        line-height: 38px;
+
+    }
+    &__items {
+        width: 743px;
+    }
+    &__item {
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            margin-right: 20px;
+        }
+        &-descr {
+            font-size: 18px;
+            line-height: 29px;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.features {
+    padding-top: 100px;
+    height: 1162px;
+    &__wrapper {
+        position: relative;
+        @include before_square;
+        &:before {
+            width: 315.37px;
+            height: 315.37px;
+            left: -432px;
+            top: 60px;
+            border-radius: 30px;
+            transform: rotate(135deg);
+            background: rgba(231, 142, 59, 0.05);
+        }
+        @include after_square;
+        &:after {
+            width: 315.37px;
+            height: 315.37px;
+            left: -250px;
+            top: 60px;
+            border-radius: 30px;
+            transform: rotate(135deg);
+            background: rgba(231, 142, 59, 0.05);
+        }
+    }
+    &__subtitle {
+        margin-top: 20px;
+        font-size: 23px;
+        line-height: 31px;
+        text-align: center;
+    }
+    &__cards {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: repeat(2, auto);
+        column-gap: 130px;
+        row-gap: 80px;
+    }
+    &__item {
+        &-title {
+            margin-top: 30px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        &-active {
+            margin: 10px 0;
+            width: 86px;
+            height: 31px;
+            background: #BAFFB9;
+            border-radius: 3px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            text-align: center;
+        }
+        &-descr {
+            font-size: 18px;
+            line-height: 29px;
+        }
+    }
+}

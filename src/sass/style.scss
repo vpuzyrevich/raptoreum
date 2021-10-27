@@ -1,0 +1,31 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+@import 'base/mixins';
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/why-raptoreum';
+@import 'blocks/features';
+@import 'blocks/roadmap';
+@import 'blocks/exchanges';
+@import 'blocks/footer';
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: Encode Sans Expanded;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+}

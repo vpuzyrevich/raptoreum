@@ -1,0 +1,23 @@
+@mixin before_square {
+    &::before {
+        content: '';
+        position: absolute;
+        width: 366px;
+        height: 379px;
+        background: rgba(231, 142, 59, 0.08);
+        border-radius: 20px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+}
+
+@mixin after_square {
+    &::after {
+        content: '';
+        position: absolute;
+        width: 366px;
+        height: 379px;
+        background: rgba(231, 142, 59, 0.08);
+        border-radius: 20px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+}
